@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="get_coordinates">Get Coordinates</string>
+    <string name="provide_overlay_permission">Please provide the overlay permission for the application</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.prajwalgs.drawer.Activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/addSquare"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/get_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/curve_primary"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:text="@string/get_coordinates"/>
+
+        <RelativeLayout
+            android:layout_above="@+id/get_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Min"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <SeekBar
+                android:id="@+id/changeSize"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="3dp"
+                android:max="200"
+                android:min="1"
+                android:maxHeight="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible"
+                android:progress="100"
+                android:progressDrawable="@drawable/progress_primary"
+                android:thumb="@drawable/thumb_primary" />
+
+            <TextView
+                android:id="@+id/max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="Max"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
